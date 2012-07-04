@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
 
 gem 'rails', '3.2.6'
 
@@ -21,6 +21,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'jasmine'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
