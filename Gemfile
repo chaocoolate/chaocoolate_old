@@ -6,7 +6,9 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'haml-rails'          		# use haml as templating engine
+gem 'compass'            			# CSS frameworks
+gem 'compass-colors'      		# compass color manipulation functions (like HSL)
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,7 +24,9 @@ end
 
 gem 'jquery-rails'
 
-gem 'jasmine'
+group :test do
+	gem 'jasmine'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
