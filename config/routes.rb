@@ -9,7 +9,7 @@ Chaocoolate::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-  match 'templates/:template_name' => 'templates#render_template', :as => :render_template
+  match 'test_angular' => 'homepage#test_angular', :as => :test_angular
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
@@ -49,7 +49,7 @@ Chaocoolate::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'homepage#show'
 
   # See how all your routes lay out with "rake routes"
 
